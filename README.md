@@ -1,1 +1,1 @@
-Very simple Dependency Injection in Delphi 5.
+Very simple Dependency Injection in **Delphi 5**.
