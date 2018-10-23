@@ -1,1 +1,4 @@
 dcu
+*.~pas
+*.~dfm
+*.dcu
