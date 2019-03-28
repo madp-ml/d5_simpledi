@@ -36,8 +36,9 @@ uses
   f_TestForm,
 
   ServiceManager,
-  i_ConfigurationService,
+  i_ConfigurationService, i_DatabaseService,
 
+  DatabaseService,
   ConfigurationService, MockConfigurationService;
 
 
@@ -45,6 +46,8 @@ uses
 
 procedure TfMain.FormCreate(Sender: TObject);
 begin
+  TServiceManager.RegisterType( IDatabaseService, TDatabaseService );
+
   TServiceManager.RegisterType( IConfigurationService, TConfigurationService );
   TServiceManager.RegisterType( IConfigurationService, TMockConfigurationService, 'mock' );
 end;

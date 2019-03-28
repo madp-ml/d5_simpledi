@@ -8,7 +8,9 @@ uses
   ConfigurationService in 'services\ConfigurationService.pas',
   Service in 'services\Service.pas',
   ServiceManager in 'services\ServiceManager.pas',
-  MockConfigurationService in 'services\MockConfigurationService.pas';
+  MockConfigurationService in 'services\MockConfigurationService.pas',
+  i_DatabaseService in 'interfaces\i_DatabaseService.pas',
+  DatabaseService in 'services\DatabaseService.pas';
 
 {$R *.RES}
 

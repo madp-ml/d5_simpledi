@@ -1,4 +1,7 @@
 dcu
-*.~pas
-*.~dfm
+*.~*
 *.dcu
+*.cfg
+*.dof
+*.dsk
+SimpleDI.exe
