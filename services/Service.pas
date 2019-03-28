@@ -5,6 +5,8 @@ interface
 type
   TServiceObject = class(TInterfacedObject)
   private
+  protected
+    procedure DI(); virtual;
   public
     constructor Create(); virtual;
   end;
@@ -18,6 +20,12 @@ implementation
 constructor TServiceObject.Create;
 begin
   inherited;
+  DI();
+end;
+
+procedure TServiceObject.DI;
+begin
+ { empty }
 end;
 
 end.
